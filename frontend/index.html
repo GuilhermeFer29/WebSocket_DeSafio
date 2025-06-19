@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat WebSocket</title>
+    <!-- Inclui Tailwind CSS para um estilo rápido e responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Inter", sans-serif; /* Define a fonte Inter */
+            background-color: #f0f2f5; /* Cor de fundo suave */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-lg">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Chat WebSocket Simples</h1>
+
+        <!-- Área de exibição das mensagens -->
+        <div id="messages" class="border border-gray-300 rounded-lg p-4 h-64 overflow-y-auto mb-4 bg-gray-50">
+            <!-- Mensagens serão adicionadas aqui via JavaScript -->
+            <p class="text-gray-600 text-sm">Conectando ao servidor...</p>
+        </div>
+
+        <!-- Formulário para envio de mensagens -->
+        <div class="flex gap-2">
+            <input type="text" id="messageInput" placeholder="Digite sua mensagem..."
+                   class="flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <button id="sendButton"
+                    class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 ease-in-out shadow-md">
+                Enviar
+            </button>
+        </div>
+
+        <!-- Mensagem de status da conexão -->
+        <p id="status" class="mt-4 text-center text-sm text-gray-500"></p>
+    </div>
+
+    <!-- Script JavaScript para lidar com a lógica do WebSocket -->
+    <script src="script.js"></script>
+</body>
+</html>
