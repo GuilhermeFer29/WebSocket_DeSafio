@@ -43,7 +43,7 @@ Certifique-se de ter o Python 3.x e pip (gerenciador de pacotes do Python) insta
 1. Clonar o Repositório (se aplicável)
 Se este projeto estiver em um repositório Git, clone-o para sua máquina local:
 
-git clone <URL_DO_SEU_REPOSITORIO>
+git clone [<URL_DO_SEU_REPOSITORIO>](https://github.com/GuilhermeFer29/WebSocket_DeSafio)
 cd WebSocket_desafio
 
 2. Configurar e Iniciar o Backend (Servidor)
