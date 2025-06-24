@@ -1,7 +1,7 @@
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from typing import Set
-import asyncio
-import websockets
+import uvicorn
+
 # Criando a Aplicação FastAPI
 app= FastAPI()
 
@@ -61,5 +61,5 @@ async def read_root():
     return {"message": "Bem-vindo ao servidor WebSocket"}
 
 if __name__ == "__main__":
-    import uvicorn
+
     uvicorn.run(app, host="0.0.0.0", port=8765)
