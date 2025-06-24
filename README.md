@@ -1,7 +1,3 @@
-De fato, um bom README é crucial para qualquer projeto no GitHub\! Ele serve como um guia para novos usuários e colaboradores. Aqui está uma versão organizada e aprimorada do seu README, focando em clareza, concisão e facilidade de uso:
-
------
-
 # Desafio Técnico: Comunicação com WebSockets
 
 Este projeto é uma implementação básica de comunicação bidirecional utilizando WebSockets. Ele consiste em um servidor **Backend** desenvolvido com **FastAPI** (Python) e um **Cliente** (Frontend) baseado em **HTML**, **CSS** (TailwindCSS) e **JavaScript** puro.
