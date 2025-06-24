@@ -43,15 +43,20 @@ Certifique-se de ter o Python 3.x e pip (gerenciador de pacotes do Python) insta
 1. Clonar o Repositório (se aplicável)
 Se este projeto estiver em um repositório Git, clone-o para sua máquina local:
 
-git clone [<URL_DO_SEU_REPOSITORIO>](https://github.com/GuilhermeFer29/WebSocket_DeSafio)
+```bash
+git clone https://github.com/GuilhermeFer29/WebSocket_DeSafio
+>>>>>>> Stashed changes
 cd WebSocket_desafio
+```
 
 2. Configurar e Iniciar o Backend (Servidor)
 Navegue até o diretório backend, instale as dependências e inicie o servidor:
 
+```bash
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload --port 8765
+```
 
 O comando uvicorn main:app --reload --port 8765 iniciará o servidor FastAPI na porta 8765. O --reload é útil para desenvolvimento, pois reinicia o servidor automaticamente a cada alteração no código.
 
@@ -59,10 +64,11 @@ Mantenha este terminal aberto, pois o servidor precisa estar em execução para 
 
 3. Iniciar o Frontend (Cliente)
 Em um novo terminal (ou aba), navegue até o diretório frontend:
-
+```bash
 cd ../frontend # Se você estiver na pasta backend, use este comando
 # Ou, se estiver na raiz do projeto (WebSocket_desafio):
 # cd frontend
+```
 
 Para iniciar o cliente, basta abrir o arquivo index.html em seu navegador web. Você pode fazer isso de duas maneiras:
 
